@@ -19,6 +19,8 @@ class Toro
             }
         }
         $path_info = str_replace("-", "", $path_info);
+        $path_info = str_replace("/", "", $path_info);
+        $path_info = "/" . $path_info;
         
         $discovered_handler = null;
         $regex_matches = array();
